@@ -2,6 +2,8 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
+//TASK #1
+//Constructor #1
 public class Employer {
 
     private int id;
@@ -13,6 +15,8 @@ public class Employer {
         nextId++;
     }
 
+    //TASK #1
+    //Constructor #2
     public Employer(String value) {
         this();
         this.value = value;
