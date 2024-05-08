@@ -87,6 +87,20 @@ public class Job {
         this.coreCompetency = coreCompetency;
     }
 
+    //TASK #5 - ADD CUSTOM TOSTRING METHOD
+    @Override
+    public String toString() {
+        return "\n" +
+                "ID: " + getId() + "\n" +
+                "Name: " + (getName() != null && !getName().isEmpty() ? getName() : "Data not available") + "\n" +
+                "Employer: " + (getEmployer() != null && getEmployer().getValue() != null && !getEmployer().getValue().isEmpty() ? getEmployer().getValue() : "Data not available") + "\n" +
+                "Location: " + (getLocation() != null && getLocation().getValue() != null && !getLocation().getValue().isEmpty() ? getLocation().getValue() : "Data not available") + "\n" +
+                "Position Type: " + (getPositionType() != null && getPositionType().getValue() != null && !getPositionType().getValue().isEmpty() ? getPositionType().getValue() : "Data not available") + "\n" +
+                "Core Competency: " + (getCoreCompetency() != null && getCoreCompetency().getValue() != null && !getCoreCompetency().getValue().isEmpty() ? getCoreCompetency().getValue() : "Data not available") + "\n";
+    }
+
+
+
     //TASK #3 - GENERATE EQUALS METHOD & HASHCODE
     @Override
     public boolean equals(Object o) {
